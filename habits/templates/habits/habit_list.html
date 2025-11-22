@@ -1,0 +1,9 @@
+<h1>Meus Hábitos</h1>
+
+<ul>
+    {% for habit in habits %}
+        <li>{{ habit.name }} - criado em {{ habit.created_at }}</li>
+    {% empty %}
+        <li>Nenhum hábito cadastrado ainda.</li>
+    {% endfor %}
+</ul>
